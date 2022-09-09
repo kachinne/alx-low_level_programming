@@ -13,7 +13,7 @@ int main(void)
 	{
 		if (look != 'q' && look != 'e')
 			putchar (look);
-
+	}
 	putchar('\n');
 	return (0);
 }
