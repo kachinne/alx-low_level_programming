@@ -12,6 +12,7 @@ int main(void)
 	for (look = 'a'; look <= 'z'; look++)
 		if (look == q && e)
 			putchar (look);
+	putchar('\n');
 	return (0);
 }
 
