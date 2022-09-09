@@ -17,4 +17,5 @@ int main(void)
 	printf("Last digit of % is % and is less than 6 and not 0\n", n);
 	else
 		Printf("Last digit of % is % and is 0\n", n);
+		return (0);
 	}
