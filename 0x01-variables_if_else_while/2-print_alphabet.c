@@ -6,9 +6,12 @@
 
 int main(void)
 {
-	char a = lowercase;
+	char lowercase;
 
-	putchar (a);
+	for (lowercase = 'a'; lowcase <= 'z'; lowercase++)
+		putchar(lowercase);
+
+	putchar ('\n');
 
 return (0);
 }
