@@ -3,7 +3,7 @@
  * print_sign - A function that prints the sign of a number
  * @n:Parameter
  *
- * Return: Always 0
+ * Return: return 1 or 0 or -1
  */
 int print_sign(int n)
 {
