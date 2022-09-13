@@ -1,13 +1,11 @@
 #include "main.h"
 /**
- * _putchar -writes the character c to stdout
- * @c: The character to print
+ * main -Entry point
  *
- * Return: On success 1
- * on error, -1 is returned, and errno is set appropriately.
+ * Return: Always 0
  */
 
-int _putchar(char c)
+int main(void)
 
 {
 
@@ -21,5 +19,5 @@ int _putchar(char c)
 	_putchar('r');
 
 		_putchar('\n');
-
+return (0);
 }
