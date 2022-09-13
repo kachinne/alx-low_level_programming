@@ -21,6 +21,5 @@ int _putchar(char c)
 	_putchar('r');
 
 		_putchar('\n');
-return (0);
 
 }
