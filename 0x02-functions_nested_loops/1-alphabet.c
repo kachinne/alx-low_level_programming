@@ -5,13 +5,14 @@
  * Return: Always 0
  */
 void print_alphabet_x10(void);
-{
-char num;
 
-for (num = 'a'; num <= 'z'; num++)
-_putchar(num);
--putchar('\n');
+	{
+	char num;
 
-return (0);
-}
+	for (num = 'a'; num <= 'z'; num++)
+	_putchar(num);
+	-putchar('\n');
+
+	return (0);
+	}
 
