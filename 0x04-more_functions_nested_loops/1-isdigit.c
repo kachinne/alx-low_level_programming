@@ -1,0 +1,14 @@
+#include "main.h"
+/**
+ * _isdigit - Print digit
+ * @c: Parameter
+ *
+ * Return: Always 0
+ */
+int _isdigit(int c)
+{
+	if (c == 10)
+		return (1);
+	else
+		return (0);
+}
