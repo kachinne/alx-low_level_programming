@@ -12,6 +12,6 @@ int main(void)
 	int i;
 
 	i = 98;
-printf("d\n", i);
+printf("%d\n", i);
 return (0);
 }
