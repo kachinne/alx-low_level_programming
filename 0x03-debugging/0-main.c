@@ -13,3 +13,5 @@ int main(void)
 
 	i = 98;
 printf("d\n", i);
+return (0);
+}
