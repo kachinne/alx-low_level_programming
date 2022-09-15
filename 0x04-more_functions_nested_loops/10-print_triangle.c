@@ -15,9 +15,9 @@ if (size > 0)
 	{
 		for (boy = size - ink; boy--)
 			_putchar(' ');
-		for (b = 0; b < i; b++)
+		for (boy = 0; boy < ink; boy++)
 			_putchar('#');
-		if (i == size)
+		if (ink == size)
 			continue;
 		}
 }
