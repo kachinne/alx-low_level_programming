@@ -6,7 +6,7 @@
  */
 int main(void)
 {
-	long prime   = 6128524751143, div;
+	long prime   = 612852475143, div;
 
 	while (div < (prime / 2))
 	{
