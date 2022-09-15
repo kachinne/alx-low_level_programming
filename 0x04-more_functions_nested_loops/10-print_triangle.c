@@ -13,7 +13,7 @@ if (size > 0)
 {
 	for (ink = 1; ink <= size; ink++)
 	{
-		for (boy = size - ink; boy--)
+		for (boy = size - ink; boy > 0; boy--)
 			_putchar(' ');
 		for (boy = 0; boy < ink; boy++)
 			_putchar('#');
