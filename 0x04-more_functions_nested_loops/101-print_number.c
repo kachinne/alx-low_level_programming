@@ -7,10 +7,14 @@
  */
 void print_number(int n)
 {
-	int q;
-	:
-	_putchar('Enter an integer\n');
-	_putchar('%d', &q);
-	_putchar('The integer is: %d\n', q);
-	return (0);
+	unsigned int num = n;
+
+	if (n < 0)
+	{
+		_putchar('-');
+		num = -num;
+	}
+	if ((num / 10) > 0)
+		print_number(num / 10);
+	_putchar((num % 10) + '0');
 }
