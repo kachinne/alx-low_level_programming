@@ -5,7 +5,7 @@
  *
  * Return: Always 0
  */
-print_diagonal(int n)
+void print_diagonal(int n)
 {
 	int b, can;
 
