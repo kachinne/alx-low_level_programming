@@ -7,13 +7,13 @@
  */
 void print_triangle(int size)
 {
-	int i, b;
+	int ink, boy;
 
 if (size > 0)
 {
-	for (i = 1; i <= size; i++)
+	for (ink = 1; ink <= size; ink++)
 	{
-		for (b = size - i; b > 0; b--)
+		for (boy = size - ink; boy--)
 			_putchar(' ');
 		for (b = 0; b < i; b++)
 			_putchar('#');
