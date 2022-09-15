@@ -19,4 +19,5 @@ if (size > 0)
 		if (i == size)
 			continue;
 		}
+_putchar('\n');
 	}
