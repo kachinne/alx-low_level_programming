@@ -14,7 +14,7 @@ void print_square(int size)
 		for (love = 0; love < size; love++)
 		{
 			for (life = 0; life < size; life++)
-		_putchar('#');
+				_putchar('#');
 			if (love == size - 1)
 				continue;
 			_putchar('\n');
