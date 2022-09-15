@@ -7,8 +7,18 @@
  */
 void print_square(int size)
 {
-	if (size <= 0)
+	int love, life;
+
+	if (size > 0)
+	{
+		for (love = 0; love < size; love++)
+		{
+			for (life = 0; life < size; life++)
 		_putchar('#');
+			if (love == size - 1)
+				continue;
 			_putchar('\n');
 }
-
+}
+_putchar('\n');
+}
