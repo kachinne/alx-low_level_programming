@@ -19,6 +19,7 @@ if (size > 0)
 			_putchar('#');
 		if (ink == size)
 			continue;
+		_putchar('\n');
 		}
 }
 _putchar('\n');
