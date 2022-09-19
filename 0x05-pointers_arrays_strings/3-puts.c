@@ -9,8 +9,7 @@ void _puts(char *str)
 {
 	char *str;
 
-	str = " I am well loaded in programming"
-		_puts(str);
-	_puts('\n');
-	return (0);
+	while (*str)
+	_putchar(*str++);
+	_putchar('\n');
 }
