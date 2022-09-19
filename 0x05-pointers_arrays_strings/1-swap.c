@@ -8,12 +8,8 @@
  */
 void swap_int(int *a, int *b)
 {
-	double a, b, temp;
-
-	temp = a;
-	a = b;
-	b = temp;
-	_putchar('temp');
-	_puchar ('\n');
-return (0);
+	int temp = *a;
+	*a = *b;
+	*b = temp;
 }
+	
