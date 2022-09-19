@@ -7,8 +7,13 @@
  */
 void print_rev(char *s)
 {
-	char s;
+	int len = 0, index;
 
-	for (s = 1; s >= 10; s--)
-		_putchar('\n');
+	while (s[index++])
+		len++;
+
+	for (index = len - 1; index >= 0; index--)
+		_putchar(s[index]);
+
+	_putchar('\n');
 }
