@@ -7,7 +7,15 @@
  */
 void print_rev(char *s)
 {
-	while (*s)
-		_putchar(*s--);
+int spark = 0;
+
+while (spark >= 0)
+{
+	if (s[spark]=='\0')
+		break;
+	spark++;
+}
+for (spark--; spark >= 0; spark--)
+		_putchar(s[spark]));
 	_putchar('\n');
 }
