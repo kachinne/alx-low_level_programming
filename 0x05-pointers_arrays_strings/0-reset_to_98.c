@@ -7,12 +7,5 @@
  */
 void reset_to_98(int *n)
 {
-	int n;
-	int *ptr;
-	
-	n = 98;
-	ptr = &n;	
-	_putchar('Address of 'n': %p\n',&n);
-	_putchar('Value of 'ptr': %p\n',ptr);
-	return (0);
+*n = 98;
 }
