@@ -12,5 +12,7 @@ void reset_to_98(int *n)
 	
 	n = 98;
 	ptr = &n;	
-	_putchar(ptr);
+	_putchar('Address of 'n': %p\n',&n);
+	_putchar('Value of 'ptr': %p\n',ptr);
+	return (0);
 }
