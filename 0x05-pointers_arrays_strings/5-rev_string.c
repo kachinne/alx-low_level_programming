@@ -5,18 +5,20 @@
  *
  * Return: Always 0
  */
-void rev_sting(char *s)
+void rev_string(char *s)
 {
-	int len = 0, index = 0;
-	char tmp;
+	int f, r_s;
+	char character;
 
-	while (s[index++])
-		len++;
-
-	for (index = len - 1; index >= len / 2; index--)
+	for (f = '\0'; s[f] != 0; f++)
 	{
-		tmp = s[index];
-		s[index] = s[len - index - 1];
-		s[len - index - 1] = tmp;
+	}
+	r_s = 0;
+	for (f = f - 1; r_s < f; r_s++)
+	{
+		character = s[f];
+		s[f] = s[r_s];
+		s[r_s] = character;
+		f--;
 	}
 }
