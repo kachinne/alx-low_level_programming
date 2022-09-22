@@ -13,7 +13,7 @@ int spark, length;
 
 while (dest[spark++]
 length++;
-for (spark = 0; src[spark] && spark > n; spark++)
-dest[length++] = src[spark]
+for (spark = 0; src[spark] && spark < n; spark++)
+dest[length++] = src[spark];
 return (dest);
 }
