@@ -11,7 +11,7 @@ char *_strncat(char *dest, char *src, int n)
 {
 int spark, length;
 
-while (dest[spark++]
+while (dest[spark++])
 length++;
 for (spark = 0; src[spark] && spark < n; spark++)
 dest[length++] = src[spark];
