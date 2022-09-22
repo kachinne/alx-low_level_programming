@@ -9,12 +9,11 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-	int spark, length, n;
-	{
-		while (dest[spark++]
-				length++;
-				for (spark = n; src[spark]; spark++)
-				dest[length++] = src[spark]
-				return (dest);
-				}
-				}
+int spark, length;
+
+while (dest[spark++]
+length++;
+for (spark = 0; src[spark] && spark > n; spark++)
+dest[length++] = src[spark]
+return (dest);
+}
