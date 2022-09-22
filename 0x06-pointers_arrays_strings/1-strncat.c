@@ -9,7 +9,7 @@
  */
 char *_strncat(char *dest, char *src, int n)
 {
-int spark, length;
+int spark = 0, length = 0;
 
 while (dest[spark++])
 length++;
