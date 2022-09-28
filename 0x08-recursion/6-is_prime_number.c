@@ -1,51 +1,43 @@
 #include "main.h"
 
-/**
- * is_prime_number - determine if a number is a prime number
- * @n: int number
- * Return: 1 if prime, 0 otherwise
- */
+int is_divisible(int num, int div);
+int is_prime_number(int n);
 
+/**
+ * is_divisible - Checks if a number is divisible.
+ * @num: The number to be checked.
+ * @div: The divisor.
+ *
+ * Return: If the number is divisible - 0.
+ *         If the number is not divisible - 1.
+ */
+int is_divisible(int num, int div)
+{
+	if (num % div == 0)
+		return (0);
+
+	if (div == num / 2)
+		return (1);
+
+	return (is_divisible(num, div + 1));
+}
+
+/**
+ * is_prime_number - Checks if a number is prime.
+ * @n: The number to be checked.
+ *
+ * Return: If the integer is not prime - 0.
+ *         If the number is prime - 1.
+ */
 int is_prime_number(int n)
 {
-	if (n < 2)
+	int div = 2;
+
+	if (n <= 1)
 		return (0);
-	if (n < 4)
+
+	if (n >= 2 && n <= 3)
 		return (1);
-	return (hai(n, 2));
-}
 
-/**
- * _sqrt - return square root of number
- * @x: number
- * @i: number incrementer acting as divisor
- * Return: square root of `x`
- */
-
-int _sqrt(int x, int i)
-{
-	int square;
-
-	square = i * i;
-	if (square >= x)
-		return (i);
-	else
-		return (_sqrt(x, i + 1));
-}
-
-/**
- * hai - helper function, recursive steps taken
- * @n: number given to original function is_prime_number
- * @d: incrementer divisor
- * Return: 0 if not prime, 1 if prime
- */
-
-int hai(int n, int d)
-{
-	if (n % d == 0)
-		return (0);
-	else if (_sqrt(n, 1) < d)
-		return (1);
-	else
-		return (hai(n, d + 1));
+	return (is_divisible(n, div));
 }
