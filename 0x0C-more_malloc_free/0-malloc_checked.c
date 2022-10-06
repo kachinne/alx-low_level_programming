@@ -5,7 +5,7 @@
  *
  * Return: Always 0
  */
-void *malloc_checked(unsigned int b);
+void *malloc_checked(unsigned int b)
 {
 	char *ant;
 		if (b == NULL)
