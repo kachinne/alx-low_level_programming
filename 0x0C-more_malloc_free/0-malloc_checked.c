@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdlib.h>
 /**
  * malloc_checked - allocation of memory
  * @b: Parameter one
@@ -10,7 +11,7 @@ void *malloc_checked(unsigned int b)
 	void *p;
 
 	p = malloc(b);
-		if (b == 0)
+		if (b == NULL)
 		exit(98);
 	return (p);
 }
