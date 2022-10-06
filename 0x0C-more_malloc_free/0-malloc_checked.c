@@ -7,7 +7,7 @@
  */
 void *malloc_checked(unsigned int b);
 {
-	char *ant
+	char *ant;
 		if (b == NULL)
 		
 			exit(98);
